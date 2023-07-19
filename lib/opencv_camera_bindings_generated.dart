@@ -170,6 +170,20 @@ class OpenCVCameraBindings {
   late final _setLogLevelPtr =
       _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Int)>>('setLogLevel');
   late final _setLogLevel = _setLogLevelPtr.asFunction<void Function(int)>();
+
+  void freeImage(
+    ffi.Pointer<ffi.Uint8> pointer,
+  ) {
+    return _freeImage(
+      pointer,
+    );
+  }
+
+  late final _freeImagePtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Uint8>)>>(
+          'freeImage');
+  late final _freeImage =
+      _freeImagePtr.asFunction<void Function(ffi.Pointer<ffi.Uint8>)>();
 }
 
 final class VideoCapture extends ffi.Opaque {}

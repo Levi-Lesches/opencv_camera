@@ -33,6 +33,7 @@ FFI_PLUGIN_EXPORT void Mat_destroy(Mat* matrix);
 FFI_PLUGIN_EXPORT void imshow(Mat* image);
 FFI_PLUGIN_EXPORT int encodeJpg(Mat* image, int quality, uint8_t** pointer);
 FFI_PLUGIN_EXPORT void setLogLevel(int level);
+FFI_PLUGIN_EXPORT void freeImage(uint8_t* pointer);
 		
 #ifdef __cplusplus
 }

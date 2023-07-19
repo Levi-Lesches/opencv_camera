@@ -59,3 +59,7 @@ FFI_PLUGIN_EXPORT int encodeJpg(Mat* image, int quality, uint8_t** pointer) {
 FFI_PLUGIN_EXPORT void setLogLevel(int level) {
 	cv::utils::logging::setLogLevel(static_cast<cv::utils::logging::LogLevel>(level));
 }
+
+FFI_PLUGIN_EXPORT void freeImage(uint8_t* pointer) {
+	free(pointer);
+}

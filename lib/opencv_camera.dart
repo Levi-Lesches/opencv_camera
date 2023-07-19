@@ -10,13 +10,13 @@ import 'opencv_camera_bindings_generated.dart';
 
 export "camera.dart";
 
-class OpenCVCamera implements CameraPlatform {
-	@override
-  Future<List<CameraDescription>> availableCameras() async => [];
+// class OpenCVCamera implements CameraPlatform {
+// 	@override
+//   Future<List<CameraDescription>> availableCameras() async => [];
 
-  @override
-  Widget buildPreview(int id) => Container();
+//   @override
+//   Widget buildPreview(int id) => Container();
 
-  @override
-  Future<void> dispose(int id) { }
-}
+//   @override
+//   Future<void> dispose(int id) { }
+// }

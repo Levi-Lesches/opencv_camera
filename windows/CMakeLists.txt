@@ -19,5 +19,10 @@ set(opencv_camera_bundled_libraries
   # Defined in ../src/CMakeLists.txt.
   # This can be changed to accommodate different builds.
   $<TARGET_FILE:opencv_camera>
+  "build/opencv/bin/Debug/opencv_core480d.dll"
+  "build/opencv/bin/Debug/opencv_highgui480d.dll"
+  "build/opencv/bin/Debug/opencv_imgcodecs480d.dll"
+  "build/opencv/bin/Debug/opencv_imgproc480d.dll"
+  "build/opencv/bin/Debug/opencv_videoio480d.dll"
   PARENT_SCOPE
 )
